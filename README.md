@@ -1,5 +1,5 @@
 <h1 align="center"> BUTTON TYPES </h1>
-<p align="center">IN PRODUCTION</p>
+<p align="center">IN PRODUCTION | SOME LINKS WILL NOT WORK</p>
 <p align="center">HTML buttons documentation</p>
 
 <a align="center" href="#">
