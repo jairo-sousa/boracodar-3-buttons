@@ -1,8 +1,7 @@
-import "./styles/App.css";
-
 import { Header } from "./components/Header";
 import { Buttons } from "./components/Buttons";
 import { Info } from "./components/Info";
+import { Flex } from "@chakra-ui/react";
 
 function App() {
 	const headerText = {
@@ -12,15 +11,21 @@ function App() {
 	};
 
 	return (
-		<div className="App">
-			<section>
+		<Flex className="App">
+			<Flex
+				direction="column"
+				as="section"
+				justify="center"
+				gap="6.8rem"
+				flex={1}
+			>
 				<Header headerText={headerText} />
 				<Buttons />
-			</section>
-			<section>
+			</Flex>
+			<Flex as="section" align="center" w="27%" bg="#130F1E">
 				<Info />
-			</section>
-		</div>
+			</Flex>
+		</Flex>
 	);
 }
 
