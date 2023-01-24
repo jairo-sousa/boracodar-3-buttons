@@ -9,6 +9,9 @@ function App() {
 		paragraph:
 			"Within a layout, buttons serve to highlight important actions to be taken. Below is an example of types and properties.",
 	};
+	const headerCustomStyle = {
+		w: "80.8rem",
+	};
 
 	return (
 		<Flex className="App">
@@ -19,7 +22,7 @@ function App() {
 				gap="6.8rem"
 				flex={1}
 			>
-				<Header headerText={headerText} />
+				<Header headerText={headerText} customStyle={headerCustomStyle} />
 				<Buttons />
 			</Flex>
 			<Flex as="section" align="center" w="27%" bg="#130F1E">
