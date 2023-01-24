@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Buttons } from "./components/Buttons";
+import { Buttons } from "./components/Buttons/Buttons";
 import { Info } from "./components/Info";
 import { Flex } from "@chakra-ui/react";
 

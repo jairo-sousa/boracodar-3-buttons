@@ -1,6 +1,6 @@
 import { Th, Thead, Tr } from "@chakra-ui/react";
 
-import { ButtonTable } from "../utils/ButtonTable";
+import { ButtonTable } from "../../utils/ButtonTable";
 
 export function TableHead() {
 	return (
