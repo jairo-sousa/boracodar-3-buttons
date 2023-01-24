@@ -9,19 +9,13 @@ import {
 } from "@chakra-ui/react";
 
 import { ButtonTable } from "../utils/ButtonTable";
+import { TableHead } from "./TableHead";
 
 export function Buttons() {
 	return (
 		<TableContainer as="main">
 			<Table variant="unstyled" w="95.8rem" h="57.6rem">
-				<Thead>
-					<Tr>
-						<Th></Th>
-						{ButtonTable.ColsHead.map((th, i) => {
-							return <Th key={`${th}-${i}`}>{th}</Th>;
-						})}
-					</Tr>
-				</Thead>
+				<TableHead />
 				<Tbody>
 					{ButtonTable.RowsHead.map((row, i) => {
 						return (
