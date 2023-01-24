@@ -1,3 +1,4 @@
+import { Button, Flex } from "@chakra-ui/react";
 import { Header } from "./Header";
 
 export function Info() {
@@ -7,8 +8,16 @@ export function Info() {
 			"Interact with the buttons and watch the appearance and cursors change",
 	};
 	return (
-		<div>
+		<Flex direction="column" gap="6.8rem" w="31.8rem">
 			<Header headerText={headerText} />
-		</div>
+			<Flex h="57.6rem" w="100%" direction="column" align="center" gap="3.2rem">
+				<Flex>
+					<Button color="black">Demo button</Button>
+				</Flex>
+				<Flex>
+					<Button color="black">Demo button</Button>
+				</Flex>
+			</Flex>
+		</Flex>
 	);
 }

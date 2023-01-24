@@ -26,7 +26,7 @@ function App() {
 				<Header headerText={headerText} customStyle={headerCustomStyle} />
 				<Buttons />
 			</Flex>
-			<Flex as="section" align="center" w="27%" bg="#130F1E">
+			<Flex as="section" w="27%" align="center" justify="center" bg="#130F1E">
 				<Info />
 			</Flex>
 		</Flex>
