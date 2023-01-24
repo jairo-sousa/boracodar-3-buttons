@@ -16,9 +16,10 @@ function App() {
 	return (
 		<Flex className="App">
 			<Flex
-				direction="column"
 				as="section"
+				direction="column"
 				justify="center"
+				align="center"
 				gap="6.8rem"
 				flex={1}
 			>
