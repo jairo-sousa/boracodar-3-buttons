@@ -18,6 +18,7 @@ Project developed with the following technologies:
 
 - React Js
 - Typescript
+- Chackra UI
 - Git e Github
 
 ## Project
