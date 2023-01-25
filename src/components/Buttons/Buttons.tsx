@@ -1,7 +1,16 @@
-import { Table, Tbody, Tr, Td, TableContainer, Text } from "@chakra-ui/react";
+import {
+	Table,
+	Tbody,
+	Tr,
+	Td,
+	TableContainer,
+	Text,
+	Button,
+} from "@chakra-ui/react";
 
 import { ButtonTable } from "../../utils/ButtonTable";
 import { TableHead } from "./TableHead";
+import { TableCell } from "./TableCell";
 
 export function Buttons() {
 	return (
@@ -30,27 +39,19 @@ export function Buttons() {
 
 								{ButtonTable.RowsBody.map((cell, i) => {
 									return (
-										<Td
-											key={`${cell}-${i}`}
-											bg="#130F1E"
-											fontSize="1.4rem"
-											fontFamily="Inter"
-											fontWeight="500"
-											textAlign="center"
-										>
-											<button>{`${row} ${cell}`}</button>
-										</Td>
+										<TableCell key={`${cell}-${i}`}>
+											<Button
+												fontSize="1.4rem"
+												fontFamily="Inter"
+												fontWeight="500"
+												color="black"
+											>{`${row} ${cell}`}</Button>
+										</TableCell>
 									);
 								})}
-								<Td
-									bg="#130F1E"
-									fontSize="1.4rem"
-									fontFamily="Inter"
-									fontWeight="500"
-									textAlign="center"
-								>
-									Icon
-								</Td>
+								<TableCell>
+									<Text>Icon</Text>
+								</TableCell>
 							</Tr>
 						);
 					})}
