@@ -1,17 +1,15 @@
-import { Thead, Tr, Text } from "@chakra-ui/react";
+import { Thead, Tr, Text, Th } from "@chakra-ui/react";
 
 import { ButtonTable } from "../../utils/ButtonTable";
-
-import { CollHead } from "./CollHead";
 
 export function TableHead() {
 	return (
 		<Thead>
 			<Tr>
-				<CollHead />
+				<Th />
 				{ButtonTable.ColsHead.map((th, i) => {
 					return (
-						<CollHead key={`${th}-${i}`}>
+						<Th key={`${th}-${i}`} h="6.4rem">
 							<Text
 								fontSize="1.1rem"
 								fontFamily="roboto"
@@ -20,7 +18,7 @@ export function TableHead() {
 							>
 								{th}
 							</Text>
-						</CollHead>
+						</Th>
 					);
 				})}
 			</Tr>
