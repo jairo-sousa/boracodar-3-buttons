@@ -2,7 +2,7 @@ type ButtonTable = {
 	ColsHead: String[];
 
 	RowsHead: String[];
-	RowsBody: String[];
+	ButtonCels: String[];
 };
 
 const colshead = [
@@ -26,5 +26,5 @@ const rows = ["PRIMARY", "SECONDARY", "TERTIARY"];
 export const ButtonTable: ButtonTable = {
 	ColsHead: colshead,
 	RowsHead: rowsHead,
-	RowsBody: rows,
+	ButtonCels: rows,
 };

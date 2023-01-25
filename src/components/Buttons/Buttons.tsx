@@ -38,7 +38,7 @@ export function Buttons() {
 									</Text>
 								</Td>
 
-								{ButtonTable.RowsBody.map((cell, i) => {
+								{ButtonTable.ButtonCels.map((cell, i) => {
 									return (
 										<TableCell key={`${cell}-${i}`}>
 											<TemplateButton text={`${row} ${cell}`}></TemplateButton>
