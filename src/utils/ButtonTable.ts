@@ -21,10 +21,10 @@ const rowsHead = [
 	"MOVABLE",
 ];
 
-const rows = ["PRIMARY", "SECONDARY", "TERTIARY"];
+const ButtonCels = ["PRIMARY", "SECONDARY", "TERTIARY"];
 
 export const ButtonTable: ButtonTable = {
 	ColsHead: colshead,
 	RowsHead: rowsHead,
-	ButtonCels: rows,
+	ButtonCels: ButtonCels,
 };
