@@ -1,5 +1,6 @@
 import { Button, Flex } from "@chakra-ui/react";
 import { Header } from "./Header";
+import { TemplateButton } from "./TemplateButton";
 
 export function Info() {
 	const headerText = {
@@ -11,12 +12,9 @@ export function Info() {
 		<Flex direction="column" gap="6.8rem" w="31.8rem">
 			<Header headerText={headerText} />
 			<Flex h="57.6rem" w="100%" direction="column" align="center" gap="3.2rem">
-				<Flex>
-					<Button color="black">Demo button</Button>
-				</Flex>
-				<Flex>
-					<Button color="black">Demo button</Button>
-				</Flex>
+				<TemplateButton text="INTERACT WITH ME"></TemplateButton>
+				<TemplateButton text="INTERACT WITH ME"></TemplateButton>
+				<TemplateButton text="INTERACT WITH ME"></TemplateButton>
 			</Flex>
 		</Flex>
 	);

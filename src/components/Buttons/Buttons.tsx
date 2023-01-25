@@ -11,6 +11,7 @@ import {
 import { ButtonTable } from "../../utils/ButtonTable";
 import { TableHead } from "./TableHead";
 import { TableCell } from "./TableCell";
+import { TemplateButton } from "../TemplateButton";
 
 export function Buttons() {
 	return (
@@ -40,12 +41,7 @@ export function Buttons() {
 								{ButtonTable.RowsBody.map((cell, i) => {
 									return (
 										<TableCell key={`${cell}-${i}`}>
-											<Button
-												fontSize="1.4rem"
-												fontFamily="Inter"
-												fontWeight="500"
-												color="black"
-											>{`${row} ${cell}`}</Button>
+											<TemplateButton text={`${row} ${cell}`}></TemplateButton>
 										</TableCell>
 									);
 								})}
