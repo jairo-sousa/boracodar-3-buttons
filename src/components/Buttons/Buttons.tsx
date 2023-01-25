@@ -5,13 +5,21 @@ import {
 	Td,
 	TableContainer,
 	Text,
-	Button,
+	Image,
+	Flex,
 } from "@chakra-ui/react";
 
 import { ButtonTable } from "../../utils/ButtonTable";
 import { TableHead } from "./TableHead";
 import { TableCell } from "./TableCell";
 import { TemplateButton } from "../TemplateButton";
+
+import pointer from "../../assets/cursors/pointer.svg";
+import loading from "../../assets/cursors/loading.svg";
+import notAllowed from "../../assets/cursors/notAllowed.svg";
+import cross from "../../assets/cursors/cross.svg";
+
+const Cursors = [pointer, pointer, pointer, loading, notAllowed, cross];
 
 export function Buttons() {
 	return (
@@ -46,7 +54,9 @@ export function Buttons() {
 									);
 								})}
 								<TableCell>
-									<Text>Icon</Text>
+									<Flex justify="center">
+										<Image src={Cursors[i]}></Image>
+									</Flex>
 								</TableCell>
 							</Tr>
 						);
