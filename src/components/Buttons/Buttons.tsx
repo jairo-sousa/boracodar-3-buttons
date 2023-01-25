@@ -33,10 +33,24 @@ export function Buttons() {
 										<Td
 											key={`${cell}-${i}`}
 											bg="#130F1E"
-										>{`${row} ${cell}`}</Td>
+											fontSize="1.4rem"
+											fontFamily="Inter"
+											fontWeight="500"
+											textAlign="center"
+										>
+											<button>{`${row} ${cell}`}</button>
+										</Td>
 									);
 								})}
-								<Td bg="#130F1E">Icon</Td>
+								<Td
+									bg="#130F1E"
+									fontSize="1.4rem"
+									fontFamily="Inter"
+									fontWeight="500"
+									textAlign="center"
+								>
+									Icon
+								</Td>
 							</Tr>
 						);
 					})}
