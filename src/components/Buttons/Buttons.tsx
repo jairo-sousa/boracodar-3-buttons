@@ -1,4 +1,4 @@
-import { Table, Tbody, Tr, Td, TableContainer } from "@chakra-ui/react";
+import { Table, Tbody, Tr, Td, TableContainer, Text } from "@chakra-ui/react";
 
 import { ButtonTable } from "../../utils/ButtonTable";
 import { TableHead } from "./TableHead";
@@ -17,7 +17,16 @@ export function Buttons() {
 					{ButtonTable.RowsHead.map((row, i) => {
 						return (
 							<Tr key={`${row}-${i}`}>
-								<Td>{row}</Td>
+								<Td>
+									<Text
+										fontSize="1.1rem"
+										fontFamily="roboto"
+										fontWeight="400"
+										textAlign="center"
+									>
+										{row}
+									</Text>
+								</Td>
 
 								{ButtonTable.RowsBody.map((cell, i) => {
 									return (
