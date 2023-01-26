@@ -32,9 +32,9 @@ export function Buttons() {
 			<Table variant="unstyled" w="95.8rem" h="57.6rem">
 				<TableHead />
 				<Tbody>
-					{ButtonTable.RowsHead.map((row, i) => {
+					{ButtonTable.RowsHead.map((rowsHead, i) => {
 						return (
-							<Tr key={`${row}-${i}`}>
+							<Tr key={`${rowsHead.Head}-${i}`}>
 								<Td>
 									<Text
 										fontSize="1.1rem"
@@ -42,14 +42,16 @@ export function Buttons() {
 										fontWeight="400"
 										textAlign="center"
 									>
-										{row}
+										{rowsHead.Head.toString()}
 									</Text>
 								</Td>
 
 								{ButtonTable.ButtonCels.map((cell, i) => {
 									return (
 										<TableCell key={`${cell}-${i}`}>
-											<TemplateButton text={`${row} ${cell}`}></TemplateButton>
+											<TemplateButton
+												text={`${rowsHead.Head} ${cell}`}
+											></TemplateButton>
 										</TableCell>
 									);
 								})}
