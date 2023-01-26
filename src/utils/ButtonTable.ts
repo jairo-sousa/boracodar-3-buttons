@@ -1,10 +1,9 @@
 type RowsHead = {
 	Head: String;
-	Style?: {
-		bg?: String;
-		opacity?: String;
-		img?: String;
-		border?: String;
+	Style: {
+		opacity: String;
+		img: String;
+		border: String;
 	};
 };
 
@@ -12,7 +11,7 @@ type ButtonTable = {
 	ColsHead: String[];
 
 	RowsHead: RowsHead[];
-	ButtonCels: String[];
+	ButtonCells: String[];
 };
 
 const colshead = [
@@ -23,58 +22,60 @@ const colshead = [
 ];
 
 const rowsHead = [
-	{ Head: "DEFAULT", Style: {} },
+	{
+		Head: "DEFAULT",
+		Style: {
+			opacity: "none",
+			img: "none",
+			border: "none",
+		},
+	},
 	{
 		Head: "HOVER",
 		Style: {
-			bg: "#9674E5",
-			opacity: "",
-			img: "",
-			border: "",
+			opacity: "none",
+			img: "none",
+			border: "none",
 		},
 	},
 	{
 		Head: "FOCUS",
 		Style: {
-			bg: "",
-			opacity: "",
-			img: "",
-			border: "2px solid #D9CDF7",
+			opacity: "none",
+			img: "none",
+			border: "2px solid #FFFFFF",
 		},
 	},
 	{
 		Head: "DISABLED",
 		Style: {
-			bg: "",
 			opacity: "0.56",
-			img: "",
-			border: "",
+			img: "none",
+			border: "none",
 		},
 	},
 	{
 		Head: "LOADING",
 		Style: {
-			bg: "",
-			opacity: "",
-			img: "Spinner",
-			border: "",
+			opacity: "none",
+			img: "none",
+			border: "none",
 		},
 	},
 	{
 		Head: "MOVABLE",
 		Style: {
-			bg: "",
-			opacity: "",
-			img: "",
-			border: "",
+			opacity: "none",
+			img: "none",
+			border: "none",
 		},
 	},
 ];
 
-const ButtonCels = ["PRIMARY", "SECONDARY", "TERTIARY"];
+const ButtonCells = ["PRIMARY", "SECONDARY", "TERTIARY"];
 
 export const ButtonTable: ButtonTable = {
 	ColsHead: colshead,
 	RowsHead: rowsHead,
-	ButtonCels: ButtonCels,
+	ButtonCells: ButtonCells,
 };

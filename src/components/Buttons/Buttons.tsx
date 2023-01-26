@@ -46,11 +46,13 @@ export function Buttons() {
 									</Text>
 								</Td>
 
-								{ButtonTable.ButtonCels.map((cell, i) => {
+								{ButtonTable.ButtonCells.map((cell, i) => {
 									return (
 										<TableCell key={`${cell}-${i}`}>
 											<TemplateButton
 												text={`${rowsHead.Head} ${cell}`}
+												pattern={cell}
+												customStyle={rowsHead.Style}
 											></TemplateButton>
 										</TableCell>
 									);
