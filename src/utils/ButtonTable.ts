@@ -58,7 +58,7 @@ const rowsHead = [
 		Head: "LOADING",
 		Style: {
 			opacity: "none",
-			img: "none",
+			img: "Spinner",
 			border: "none",
 		},
 	},
@@ -66,7 +66,7 @@ const rowsHead = [
 		Head: "MOVABLE",
 		Style: {
 			opacity: "none",
-			img: "none",
+			img: "movableIcon",
 			border: "none",
 		},
 	},

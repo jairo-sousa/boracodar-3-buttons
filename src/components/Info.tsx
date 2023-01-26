@@ -12,9 +12,9 @@ export function Info() {
 		<Flex direction="column" gap="6.8rem" w="31.8rem">
 			<Header headerText={headerText} />
 			<Flex h="57.6rem" w="100%" direction="column" align="center" gap="3.2rem">
-				<TemplateButton text="INTERACT WITH ME"></TemplateButton>
-				<TemplateButton text="INTERACT WITH ME"></TemplateButton>
-				<TemplateButton text="INTERACT WITH ME"></TemplateButton>
+				<TemplateButton pattern="test" head="test"></TemplateButton>
+				<TemplateButton pattern="test" head="test"></TemplateButton>
+				<TemplateButton pattern="test" head="test"></TemplateButton>
 			</Flex>
 		</Flex>
 	);

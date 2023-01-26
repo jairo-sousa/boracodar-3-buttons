@@ -1,12 +1,11 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Spinner, Image } from "@chakra-ui/react";
+import movableIcon from "../assets/movableIcon.svg";
 
 type ButtonProps = {
-	text: String;
 	pattern: String;
-	customStyle: { opacity: String; img: String; border: String };
+	head: String;
+	customStyle?: { opacity: String; img: String; border: String };
 };
-
-type defaultBg = any;
 
 export function TemplateButton(props: ButtonProps) {
 	const Style = { ...props.customStyle };
@@ -26,6 +25,8 @@ export function TemplateButton(props: ButtonProps) {
 		},
 	}[`${props.customStyle}`];
 
+	const img = chooseImg(Style.img);
+
 	return (
 		<Button
 			bg="#8257E5"
@@ -40,8 +41,34 @@ export function TemplateButton(props: ButtonProps) {
 			fontWeight="500"
 			justifyContent="center"
 			alignItems="center"
+			gap="0.8rem"
+			w="100%"
 		>
-			{props.text}
+			{img}
+			{`${props.head} ${props.pattern}`}
 		</Button>
 	);
+
+	function chooseImg(selector: String | unknown) {
+		try {
+			const choosenImg = {
+				Spinner: (
+					<Spinner
+						thickness="3px"
+						speed="1.5s"
+						emptyColor="transparent"
+						color="white"
+						w="1.6rem"
+						h="1.6rem"
+					/>
+				),
+				movableIcon: <Image src={movableIcon}></Image>,
+			}[`${selector}`];
+
+			return choosenImg;
+		} catch (e) {
+			console.log(e);
+			return <Spinner />;
+		}
+	}
 }

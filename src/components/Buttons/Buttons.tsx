@@ -50,8 +50,8 @@ export function Buttons() {
 									return (
 										<TableCell key={`${cell}-${i}`}>
 											<TemplateButton
-												text={`${rowsHead.Head} ${cell}`}
 												pattern={cell}
+												head={rowsHead.Head}
 												customStyle={rowsHead.Style}
 											></TemplateButton>
 										</TableCell>
