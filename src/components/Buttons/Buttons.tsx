@@ -15,11 +15,11 @@ import { TableCell } from "./TableCell";
 import { TemplateButton } from "../TemplateButton";
 
 import pointer from "../../assets/cursors/pointer.svg";
-import loading from "../../assets/cursors/loading.svg";
 import notAllowed from "../../assets/cursors/notAllowed.svg";
+import loading from "../../assets/cursors/loading.svg";
 import cross from "../../assets/cursors/cross.svg";
 
-const Cursors = [pointer, pointer, pointer, loading, notAllowed, cross];
+const Cursors = [pointer, pointer, pointer, notAllowed, loading, cross];
 
 export function Buttons() {
 	return (
