@@ -4,7 +4,7 @@ import movableIcon from "../assets/movableIcon.svg";
 type ButtonProps = {
 	pattern: String;
 	head: String;
-	customStyle?: { opacity: String; img: String; border: String };
+	customStyle?: { opacity: String; img: String; border: String; w: String };
 };
 
 export function TemplateButton(props: ButtonProps) {
@@ -42,7 +42,7 @@ export function TemplateButton(props: ButtonProps) {
 			justifyContent="center"
 			alignItems="center"
 			gap="0.8rem"
-			w="100%"
+			w={Style.w?.toString()}
 		>
 			{img}
 			{`${props.head} ${props.pattern}`}

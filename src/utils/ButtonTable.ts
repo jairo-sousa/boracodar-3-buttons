@@ -4,6 +4,7 @@ type RowsHead = {
 		opacity: String;
 		img: String;
 		border: String;
+		w: String;
 	};
 };
 
@@ -28,6 +29,7 @@ const rowsHead = [
 			opacity: "none",
 			img: "none",
 			border: "none",
+			w: "",
 		},
 	},
 	{
@@ -36,6 +38,7 @@ const rowsHead = [
 			opacity: "none",
 			img: "none",
 			border: "none",
+			w: "",
 		},
 	},
 	{
@@ -44,6 +47,7 @@ const rowsHead = [
 			opacity: "none",
 			img: "none",
 			border: "2px solid #FFFFFF",
+			w: "",
 		},
 	},
 	{
@@ -52,6 +56,7 @@ const rowsHead = [
 			opacity: "0.56",
 			img: "none",
 			border: "none",
+			w: "",
 		},
 	},
 	{
@@ -60,6 +65,7 @@ const rowsHead = [
 			opacity: "none",
 			img: "Spinner",
 			border: "none",
+			w: "",
 		},
 	},
 	{
@@ -68,6 +74,7 @@ const rowsHead = [
 			opacity: "none",
 			img: "movableIcon",
 			border: "none",
+			w: "",
 		},
 	},
 ];

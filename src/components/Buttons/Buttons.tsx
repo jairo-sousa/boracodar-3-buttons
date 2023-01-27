@@ -58,7 +58,7 @@ export function Buttons() {
 									);
 								})}
 								<TableCell>
-									<Flex justify="center">
+									<Flex justify="center" align="center">
 										<Image src={Cursors[i]}></Image>
 									</Flex>
 								</TableCell>
