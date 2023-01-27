@@ -93,3 +93,7 @@ export const ButtonTable: ButtonTable = {
 	RowsHead: rowsHead,
 	ButtonCells: ButtonCells,
 };
+
+const sampleStyles = rowsHead.map((rowHead) => {
+	return rowHead.Style;
+});

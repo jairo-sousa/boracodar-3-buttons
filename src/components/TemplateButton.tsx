@@ -6,11 +6,11 @@ type ButtonProps = {
 	head: String;
 	customStyle?: {
 		defaultBg: Boolean;
-
 		opacity: String;
 		img: String;
 		border: String;
 		w: String;
+		customPattern?: String;
 	};
 };
 
@@ -19,7 +19,9 @@ export function TemplateButton(props: ButtonProps) {
 
 	const img = chooseImg(Style.img);
 
-	const bgPattern = chooseBg(props.pattern);
+	const bgPattern = chooseBg(
+		props.pattern ? props.pattern : `${Style.customPattern}`
+	);
 
 	const bgs = bgPattern.toString().split(",");
 
