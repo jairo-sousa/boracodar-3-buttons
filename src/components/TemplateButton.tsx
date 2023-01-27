@@ -4,32 +4,30 @@ import movableIcon from "../assets/movableIcon.svg";
 type ButtonProps = {
 	pattern: String;
 	head: String;
-	customStyle?: { opacity: String; img: String; border: String; w: String };
+	customStyle?: {
+		defaultBg: Boolean;
+
+		opacity: String;
+		img: String;
+		border: String;
+		w: String;
+	};
 };
 
 export function TemplateButton(props: ButtonProps) {
 	const Style = { ...props.customStyle };
 
-	const defaultBg = {
-		PRIMARY: {
-			default: "#8257E5",
-			ligth: "#9674E5",
-		},
-		SECONDARY: {
-			default: "#6A617F",
-			ligth: "#6A617F",
-		},
-		TERTIARY: {
-			default: "transparent",
-			ligth: "#6A617F",
-		},
-	}[`${props.customStyle}`];
-
 	const img = chooseImg(Style.img);
+
+	const bgPattern = chooseBg(props.pattern);
+
+	const bgs = bgPattern.toString().split(",");
+
+	const bg = Style.defaultBg ? bgs[0] : bgs[1];
 
 	return (
 		<Button
-			bg="#8257E5"
+			bg={bg}
 			opacity={Style.opacity?.toString()}
 			border={Style.border?.toString()}
 			h="4.8rem"
@@ -68,7 +66,24 @@ export function TemplateButton(props: ButtonProps) {
 			return choosenImg;
 		} catch (e) {
 			console.log(e);
-			return <Spinner />;
+			return null;
+		}
+	}
+
+	function chooseBg(patternSelector: String) {
+		try {
+			const bgs = {
+				PRIMARY: ["#8257E5", "#9674E5"],
+				SECONDARY: ["#3C3748", "#6A617F"],
+				TERTIARY: ["transparent", "transparent"],
+			}[`${patternSelector}`];
+
+			const choosenBg = [...(bgs ? bgs : "#8257E5")];
+
+			return choosenBg;
+		} catch (e) {
+			console.log(e);
+			return 0;
 		}
 	}
 }

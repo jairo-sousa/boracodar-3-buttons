@@ -1,6 +1,7 @@
 type RowsHead = {
 	Head: String;
 	Style: {
+		defaultBg: Boolean;
 		opacity: String;
 		img: String;
 		border: String;
@@ -26,6 +27,7 @@ const rowsHead = [
 	{
 		Head: "DEFAULT",
 		Style: {
+			defaultBg: true,
 			opacity: "none",
 			img: "none",
 			border: "none",
@@ -35,6 +37,7 @@ const rowsHead = [
 	{
 		Head: "HOVER",
 		Style: {
+			defaultBg: false,
 			opacity: "none",
 			img: "none",
 			border: "none",
@@ -44,6 +47,7 @@ const rowsHead = [
 	{
 		Head: "FOCUS",
 		Style: {
+			defaultBg: true,
 			opacity: "none",
 			img: "none",
 			border: "2px solid #FFFFFF",
@@ -53,6 +57,7 @@ const rowsHead = [
 	{
 		Head: "DISABLED",
 		Style: {
+			defaultBg: true,
 			opacity: "0.56",
 			img: "none",
 			border: "none",
@@ -62,6 +67,7 @@ const rowsHead = [
 	{
 		Head: "LOADING",
 		Style: {
+			defaultBg: true,
 			opacity: "none",
 			img: "Spinner",
 			border: "none",
@@ -71,6 +77,7 @@ const rowsHead = [
 	{
 		Head: "MOVABLE",
 		Style: {
+			defaultBg: true,
 			opacity: "none",
 			img: "movableIcon",
 			border: "none",
