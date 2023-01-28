@@ -15,7 +15,7 @@
 
 ## How to develop it
 
-- Clone this repositorty by using `git clone git@github.com:jairo-sousa/-boracodar3-buttons.git`
+- Clone this repositorty by using `git clone git@github.com:jairo-sousa/boracodar3-buttons.git`
 - Navigate into the main directory `cd <diname>`
 - Run `npm install` to install node modules
 - Run `npm start` to run it locally then will open on your browser on `localhost:3000` </br>
