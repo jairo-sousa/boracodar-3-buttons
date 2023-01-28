@@ -1,13 +1,12 @@
 <h1 align="center"> BUTTON TYPES </h1>
-<p align="center">IN PRODUCTION | SOME LINKS WILL NOT WORK</p>
 <p align="center">HTML buttons documentation</p>
 
-<a align="center" href="#">
+<a align="center" href="https://serene-mochi-5dd293.netlify.app/">
   <img alt="App preview" src="./.github/preview.svg">
 </a>
 
 <p align="center">
-<a href="#">
+<a href="https://serene-mochi-5dd293.netlify.app/">
   Click here or on the image above to access the project page
 </a>
 </p>
@@ -42,7 +41,7 @@ Preview of button types, their states and the appropriate cursors
 
 ## Layout
 
-You can view the project layout through [THIS LINK](https://www.figma.com/community/file/1197534710257750520). You must have a [FIGMA](https://www.figma.com/) account to access it.
+You can view the project layout through [THIS LINK](https://www.figma.com/community/file/1197534710257750520). You must have a [FIGMA](https://www.figma.com/) account to edit it.
 
 ---
 
